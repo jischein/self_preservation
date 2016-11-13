@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'cmd';
+    src: url('cmd.ttf');
+}
+
+html {
+overflow: hidden;
+}
+
+body{
+  font-family: cmd;
+  background-color:black;
+}
+
+.header{
+  font-family: 'Share Tech Mono', monospace;
+  text-align:center;
+  color:white;
+  font-size:4em;
+
+}
+
+/*#mess0{
+  padding-left:100px;
+}*/
+
+.messages{
+  font-family: 'Share Tech Mono', monospace;
+  color:white;
+  font-size: 2.7em;
+  display:inline;
+  text-align:center;
+  width: 100%;
+  /*min-height: 100vh;
+  max-height: 100%;*/
+  position: absolute;
+  /*padding-bottom:180px;*/
+  overflow: hidden;
+
+}
+
+.background-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+/* for styling w black font on white image */
+.black{
+  color: black;
+
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+ 	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+ 	height: 900px;
+	transition: opacity 1s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+	background-image: url(SRA.gif);
+	z-index: -3;
+	opacity: 0;
+}
+
+.second-image {
+	background-image: url(ff102.gif);
+	z-index: -2;
+	opacity: 0;
+}
+
+.third-image {
+	background-image: url(ff10.gif);
+	z-index: -1;
+	opacity: 0;
+}
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1.5s infinite;
+    -moz-animation: blink 1.5s infinite;
+    animation: blink 2s infinite;
+}
+.typed-cursor2{
+    opacity: 1;
+    -webkit-animation: blink 1.5s infinite;
+    -moz-animation: blink 1.5s infinite;
+    animation: blink 2s infinite;
+}
+
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
